@@ -1,0 +1,101 @@
+@import "../App.scss";
+.form {
+   align-self: flex-start;
+   width: 320px;
+   margin-bottom: 240px;
+   border: 1px solid $white;
+   border-radius: 5px;
+   background: rgba(255, 255, 255, 0.8);
+   -webkit-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+   -moz-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+   box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+   &__form-header,
+   &__form-button {
+      padding: 15px 10px;
+   }
+   &__title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: $dark100;
+   }
+   &__subtitle {
+      margin-bottom: 15px;
+      font-size: 16px;
+      color: $dark75;
+   }
+}
+.hidden {
+   width: 100%;
+   position: absolute;
+   opacity: 0;
+   visibility: hidden;
+   transform: perspective(600px) translate(0px, -100%);
+   transition: all 0.5s ease 0s;
+}
+.sub-dropdown {
+   position: relative;
+   width: 100%;
+
+   &__wrap {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 5px;
+      z-index: 20;
+      -webkit-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+      -moz-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+      box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.35);
+      transform: perspective(600px) translate(0px, 0px);
+      transition: all 0.5s ease 0s;
+   }
+
+   &__inner-between {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+   }
+   &__minus,
+   &__plus {
+      width: 24px;
+      height: 24px;
+      font-size: 18px;
+      background: transparent;
+      border: 1px solid #f1f1f1;
+      border-radius: 50%;
+   }
+   &__num {
+      width: 25px;
+      border: none;
+      background: transparent;
+      font-family: "Montserrat";
+      color: $dark100;
+      font-weight: $bold;
+   }
+   &__buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+   }
+}
+@media (max-width: 790px) {
+   .form {
+      align-self: center;
+   }
+   .sub-dropdown__minus,
+   .sub-dropdown__plus {
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+      border-radius: 50%;
+   }
+   .sub-dropdown__num {
+      width: 30px;
+   }
+}

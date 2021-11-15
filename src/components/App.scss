@@ -1,0 +1,58 @@
+@import "../components/scss/null.scss";
+@import "../components/scss/shared.scss";
+
+//===Шрифты=============
+@import "../components/fonts/fonts.scss";
+//===Body================
+
+body {
+   color: $dark100;
+   font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   &._lock {
+      overflow: hidden;
+   }
+}
+.wrapper {
+   width: 100%;
+   height: 100%;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   margin: 0 auto;
+   padding: 20px 20px;
+   &__home {
+      padding: 70px 20px 40px;
+   }
+   &__footer {
+      flex-direction: column;
+   }
+}
+.logo-link {
+   display: block;
+   width: 107px;
+   height: 40px;
+}
+.text {
+   align-self: flex-end;
+   padding: 15px;
+   border-radius: 5px;
+   background: rgba(255, 255, 255, 0.8);
+   -webkit-box-shadow: 0px 5px 10px 5px rgba(238, 238, 238, 0.55);
+   -moz-box-shadow: 0px 5px 10px 5px rgba(238, 238, 238, 0.55);
+   box-shadow: 0px 5px 10px 5px rgba(238, 238, 238, 0.55);
+}
+@media (max-width: 790px) {
+   .container__home {
+      flex-direction: column;
+      padding: 70px 0px 40px;
+   }
+   .container {
+      width: 100%;
+      padding: 15px 10px;
+   }
+}

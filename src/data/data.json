@@ -1,0 +1,21 @@
+{
+   "heading": "guests",
+   "caption": "guest",
+   "title": "Найдём номера под ваши пожелания",
+   "subtitle": "Гости",
+   "btnSubmit": "Подобрать номер",
+   "btnText": [
+      {
+         "headingBtn": "взрослые",
+         "caption": "adults"
+      },
+      {
+         "headingBtn": "дети",
+         "caption": "childrens"
+      },
+      {
+         "headingBtn": "младенцы",
+         "caption": "babies"
+      }
+   ]
+}

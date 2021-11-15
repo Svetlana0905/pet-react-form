@@ -1,0 +1,19 @@
+@import "../App.scss";
+.footer {
+   box-shadow: none;
+   background: $white;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+   }
+   &__copyright {
+      font-size: 14px;
+   }
+}
+@media (max-width: 790px) {
+   .footer__inner {
+      margin-bottom: 20px;
+   }
+}

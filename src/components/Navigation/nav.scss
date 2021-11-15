@@ -1,0 +1,17 @@
+@import "../App.scss";
+.nav {
+   display: flex;
+
+   &__link + &__link {
+      margin-left: 20px;
+   }
+   &__link {
+      color: #005755;
+   }
+   &__link:hover {
+      color: #cf6b6b;
+   }
+   &__link-active {
+      color: #cf6b6b;
+   }
+}
