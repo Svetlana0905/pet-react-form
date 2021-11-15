@@ -7,7 +7,7 @@ function Header() {
    return (
       <header className='header'>
          <section className='container'>
-            <div><Link to='/pet-react-form/' className='logo-link' ><img src="../../img/logo.jpg" alt='На главную' /></Link></div>
+            <div><Link to='/pet-react-form/' className='logo-link'></Link></div>
             <Nav />
          </section>
       </header>
