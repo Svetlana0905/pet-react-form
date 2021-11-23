@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import todoReducer from "../store/guestsSlice";
+import guestReducer from "../store/guestsSlice";
 
 const store = configureStore({
    reducer: {
-      guest: todoReducer,
+      guest: guestReducer,
    },
 });
 export default store;
